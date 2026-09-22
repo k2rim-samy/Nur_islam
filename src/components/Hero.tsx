@@ -36,9 +36,13 @@ export const Hero: React.FC = () => {
           </div>
         </div>
 
-        {/* Hero Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-400/30 text-emerald-300 text-xs sm:text-sm font-medium mb-4">
-          <Sparkles className="w-3.5 h-3.5 text-amber-400" />
+        {/* Hero Badge with Falcon Emblem */}
+        <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-slate-900/80 border border-amber-400/30 text-amber-300 text-xs sm:text-sm font-medium mb-4 shadow-lg shadow-amber-500/10">
+          <img
+            src="/falcon.jpg"
+            alt="شعار الصقر"
+            className="w-5 h-5 rounded-full object-cover border border-amber-400/50"
+          />
           <span>مرحباً بكم في بوابة نور الإسلام الرقمية الشاملة</span>
         </div>
 

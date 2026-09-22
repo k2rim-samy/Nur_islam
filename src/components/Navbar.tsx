@@ -70,22 +70,21 @@ export const Navbar: React.FC<NavbarProps> = ({ theme, toggleTheme, nextPrayerNa
         <button
           onClick={() => scrollTo('hero')}
           className="flex items-center gap-3 group text-right cursor-pointer"
+          title="بوابة نور الإسلام الرقمية"
         >
-          <div className="w-10 h-10 rounded-full flex items-center justify-center border border-amber-400/40 bg-amber-400/10 group-hover:scale-105 transition-transform shadow-inner shadow-amber-400/20">
-            <svg className="w-6 h-6" viewBox="0 0 100 100">
-              <defs>
-                <linearGradient id="navGold" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stopColor="#fef08a" />
-                  <stop offset="50%" stopColor="#fbbf24" />
-                  <stop offset="100%" stopColor="#b45309" />
-                </linearGradient>
-              </defs>
-              <path d="M40,15 A35,35 0 1,0 85,60 A30,30 0 1,1 40,15 Z" fill="url(#navGold)" />
-              <polygon points="65,30 70,40 80,40 72,46 75,56 65,49 55,56 58,46 50,40 60,40" fill="#fbbf24" />
-            </svg>
+          <div className="relative w-11 h-11 rounded-full overflow-hidden border-2 border-amber-400/50 bg-slate-900 group-hover:scale-105 transition-all shadow-md shadow-amber-500/20 flex items-center justify-center">
+            <img
+              src="/falcon.jpg"
+              alt="صقر نور الإسلام - Falcon Icon"
+              className="w-full h-full object-cover object-center group-hover:brightness-110 transition-all"
+              onError={(e) => {
+                // Fallback to SVG if image fails to load
+                (e.currentTarget as HTMLElement).style.display = 'none';
+              }}
+            />
           </div>
           <div>
-            <div className="text-xl font-bold font-title text-gold-gradient tracking-wide">
+            <div className="text-xl sm:text-2xl font-bold font-title text-gold-gradient tracking-wide leading-tight">
               نور الإسلام
             </div>
             <div className="text-[10px] text-emerald-400 font-medium tracking-wider">

@@ -20,13 +20,22 @@ export const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-white/5">
           {/* Brand Info */}
-          <div className="text-center md:text-right">
-            <div className="text-2xl font-bold font-title text-gold-gradient mb-1">
-              نور الإسلام
+          <div className="text-center md:text-right flex items-center gap-3 justify-center md:justify-start">
+            <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-amber-400/40 bg-slate-900 flex-shrink-0 shadow-md shadow-amber-500/15">
+              <img
+                src="/falcon.jpg"
+                alt="شعار الصقر"
+                className="w-full h-full object-cover object-center"
+              />
             </div>
-            <p className="text-xs text-slate-400 max-w-sm leading-relaxed">
-              البوابة الرقمية الشاملة للقرآن الكريم، مواقيت الصلاة، الأذكار اليومية والسبحة الإلكترونية.
-            </p>
+            <div>
+              <div className="text-2xl font-bold font-title text-gold-gradient mb-0.5">
+                بوابة نور الإسلام الرقمية
+              </div>
+              <p className="text-xs text-slate-400 max-w-sm leading-relaxed">
+                البوابة الرقمية الشاملة للقرآن الكريم، مواقيت الصلاة، الأذكار اليومية والسبحة الإلكترونية.
+              </p>
+            </div>
           </div>
 
           {/* Quick Links */}
