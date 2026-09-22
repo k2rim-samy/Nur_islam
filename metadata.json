@@ -1,0 +1,8 @@
+{
+  "name": "بوابة نور الإسلام الرقمية",
+  "description": "بوابة نور الإسلام الرقمية الشاملة لمواقيت الصلاة، القرآن الكريم، الأذكار، والأدعية.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
